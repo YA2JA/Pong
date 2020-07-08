@@ -633,6 +633,41 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491491, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491491, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491491, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491491, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491491, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491491, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491500, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1661459531098491502, guid: c0f14c8cd84282a4db84c422eb3afddb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -688,6 +723,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.67200005
       objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491502, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491502, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1661459531098491503, guid: c0f14c8cd84282a4db84c422eb3afddb,
         type: 3}
       propertyPath: WallList.Array.data[0]
@@ -721,7 +766,17 @@ PrefabInstance:
     - target: {fileID: 1661459531098491503, guid: c0f14c8cd84282a4db84c422eb3afddb,
         type: 3}
       propertyPath: _increaseIntensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491503, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: _timer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661459531098491503, guid: c0f14c8cd84282a4db84c422eb3afddb,
+        type: 3}
+      propertyPath: _increaseTimer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0f14c8cd84282a4db84c422eb3afddb, type: 3}
@@ -850,7 +905,7 @@ PrefabInstance:
     - target: {fileID: 4631578580770403262, guid: cb3e45e39e8dcaf41bf108adc95bedf3,
         type: 3}
       propertyPath: _speed
-      value: 25
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4631578580770403262, guid: cb3e45e39e8dcaf41bf108adc95bedf3,
         type: 3}
