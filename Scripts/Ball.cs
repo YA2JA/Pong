@@ -17,9 +17,10 @@ public class Ball : MonoBehaviour
         float distanceFromCenter;
         if (other.GetComponent<Player>() != other.GetComponent<AI>())
         {
-            distanceFromCenter = this.transform.position.y-other.transform.position.y;
-            _rigidbody.velocity = new Vector2 (-_rigidbody.velocity.x, distanceFromCenter*_speed);
             _direction*=-1;
+            distanceFromCenter = this.transform.position.y-other.transform.position.y;
+            _rigidbody.velocity = new Vector2 (_speed*_direction, distanceFromCenter*_speed);
+            
         }
         else
         {
