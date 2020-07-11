@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
-public class Player : MonoBehaviour
+public class Player : BordLimmit
 {
-    private Vector3 _targetPos;
     private void Update()
     {
-        if (Input.GetMouseButton(0))
-        _targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector2 (transform.position.x, _targetPos.y);
+        if (Input.GetMouseButton(0)){
+            float targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition).y;
+            transform.position = new Vector2 (transform.position.x, targetPos);
+        }
     }
 }
