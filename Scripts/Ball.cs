@@ -13,9 +13,10 @@ public class Ball : MonoBehaviour
         _rigidbody.velocity = new Vector2 (_speed*_direction, 0);
         StartCoroutine(speedIncrease());    
     }
+
     private void OnTriggerEnter2D(Collider2D other){
         float distanceFromCenter;
-        if (other.GetComponent<Player>() != other.GetComponent<AI>())
+        if (other.GetComponent<Player>() != other.GetComponent<Bot>())
         {
             _direction*=-1;
             distanceFromCenter = this.transform.position.y-other.transform.position.y;

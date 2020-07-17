@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-public class AI : BordLimmit
+public class Bot : BordLimmit
 {
     [SerializeField] private GameObject _ball = null;
     [SerializeField] private float _speed = 1f;
-    [SerializeField] [Range(0,2)] private float _missTakeAmplitude = 0f;
+    [SerializeField] [Range(0,2)] private float _missTakeAmplitude, _minMiss = 0f;
     private float _missTake;
     #region  Move in right direction
         private float _y => transform.position.y;
@@ -19,7 +19,7 @@ public class AI : BordLimmit
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.GetComponent<Ball>() != null) _missTake = Random.Range( - _missTakeAmplitude, _missTakeAmplitude);
+        if(other.GetComponent<Ball>() != null) _missTake = Mathf.Clamp(Random.Range(0f, 1f), _minMiss, _missTakeAmplitude) * (Random.Range(0,2)*2-1);
     }
     private void FixedUpdate(){
         if (_isBallComming) transform.position = new Vector2 (transform.position.x, transform.position.y+_move);
